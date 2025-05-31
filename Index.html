@@ -1,287 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-  <meta charset="UTF-8" />
-  <title>World Technology</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #1a1a1a;
-      color: white;
-      padding: 20px;
-      margin: 0;
-    }
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .header-text h4 {
-      font-weight: normal;
-      font-size: 1.2em;
-    }
-    .piscar em {
-      animation: piscar 1.5s infinite;
-      font-style: normal;
-      color: #28a745;
-    }
-    @keyframes piscar {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
-    .dropdown {
-      position: relative;
-      display: inline-block;
-      margin-top: 10px;
-    }
-    .dropdown button {
-      background-image: linear-gradient(467deg, #007bff, #28a745, orange, #007bff);
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #222;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-      border-radius: 5px;
-      z-index: 1;
-    }
-    .dropdown-content a {
-      color: white;
-      padding: 10px 15px;
-      display: block;
-      font-size: 14px;
-    }
-    .dropdown-content a:hover {
-      background-color: #444;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    h3 {
-      text-align: center;
-      margin-top: 40px;
-      margin-bottom: 20px;
-    }
-    .carousel-container {
-      width: 100%;
-      overflow: hidden;
-      position: relative;
-      height: 320px;
-      background: #111;
-      margin-bottom: 40px;
-      border-radius: 10px;
-    }
-    .carousel-track {
-      display: flex;
-      gap: 10px;
-      transition: transform 0.1s linear;
-      height: 300px;
-      align-items: center;
-    }
-    .carousel-track img {
-      height: 300px;
-      border-radius: 5px;
-      flex-shrink: 0;
-      object-fit: cover;
-    }
-    .programming-table {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      max-width: 450px;
-      margin: 0 auto 40px auto;
-      text-align: center;
-    }
-    .programming-table div {
-      padding: 12px;
-      border-radius: 8px;
-      font-weight: bold;
-      color: white;
-      text-shadow: 1px 1px 2px black;
-    }
-    .language-table {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
-      max-width: 900px;
-      margin: 0 auto 40px auto;
-      text-align: center;
-    }
-    .language-table a {
-      display: block;
-      padding: 8px;
-      background-color: #222;
-      border-radius: 6px;
-      font-weight: bold;
-      color: white;
-      text-shadow: 1px 1px 2px black;
-    }
-    .language-table a:hover {
-      background-color: #007bff;
-      color: white;
-    }
-    .advertisement {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      overflow-x: auto;
-      padding: 15px 0;
-      margin-bottom: 40px;
-    }
-    .advertisement img {
-      height: 300px;
-      border-radius: 5px;
-      flex-shrink: 0;
-      object-fit: cover;
-    }
-  </style>
-</head>
-<body>
 
-  <div class="header-text">
-    <h4>Bem vindo ao &nbsp;<span class="piscar"><em>World technology</em></span></h4>
-    <div class="dropdown">
-      <button>Cursos ↓</button>
-      <div class="dropdown-content">
-        <a href="#programacao">Programação 👨🏽‍💻💻</a>
-        <a href="#robotica">Robótica 🤖 ⚙️ 👾</a>
-        <a href="#eletronica">Eletrônica ⚡🛠️🔌</a>
-      </div>
-    </div>
-  </div>
-
-  <h3>Publicidade</h3>
-  <div class="advertisement">
-    <img src="transferir (1).png" alt="Publicidade 1" />
-    <img src="InShot_20250527_133715407.jpg" alt="Publicidade 2" />
-    <img src="m1.jpeg" alt="Publicidade 3" style="width:447px;" />
-    <img src="m2.jpeg" alt="Publicidade 4" />
-    <img src="m3.jpg" alt="Publicidade 5" style="width:400px;" />
-    <img src="m4.jpeg" alt="Publicidade 6" />
-  </div>
-
-  <!-- Programação -->
-  <section id="programacao">
-    <h3>Áreas da Programação</h3>
-    <div class="programming-table">
-      <div style="background-color: #007bff;"><a href="desenvolvimento web .html">Desenvolvimento Web</a></div>
-      <div style="background-color: #28a745;"><a href="desenvolvimento mobile .html">Desenvolvimento Mobile</a></div>
-      <div style="background-color: orange;"><a href="desenvolvimento de jogo .html">Desenvolvimento de Jogos</a></div>
-      <div style="background-color: #6f42c1;"><a href="BACK-END.HTML">Back-end</a></div>
-      <div style="background-color: #20c997;"><a href="front-end.HTML">Front-end</a></div>
-      <div style="background-color: #17a2b8;">Full Stack</div>
-      <div style="background-color: #ffc107; color: #111;">Ciência de Dados</div>
-      <div style="background-color: #dc3545;">Inteligência Artificial</div>
-      <div style="background-color: #6610f2;">Aprendizado de Máquina</div>
-      <div style="background-color: #fd7e14;">Cibersegurança</div>
-      <div style="background-color: #343a40;">Programação de Sistemas</div>
-      <div style="background-color: #198754;">Automação e Scripts</div>
-      <div style="background-color: #0dcaf0; color: #111;">DevOps</div>
-      <div style="background-color: #6c757d;">Engenharia de Software</div>
-      <div style="background-color: #f03e3e;">Desenvolvimento de APIs</div>
-      <div style="background-color: #0b7285;">Computação em Nuvem</div>
-    </div>
-
-    <h4 style="text-align:center; margin-bottom:20px;">ESTÁ INTERESSADO EM ALGUMA LINGUAGEM?</h4>
-    <div class="language-table">
-      <a href="m1.html">HTML</a>
-      <a href="m2.html">CSS</a>
-      <a href="m3.html">JavaScript</a>
-      <a href="m4.html">Python</a>
-      <a href="m5.html">Java</a>
-      <a href="m6.html">C</a>
-      <a href="m7.html">C++</a>
-      <a href="m8.html">C#</a>
-      <a href="#">PHP</a>
-      <a href="#">Ruby</a>
-      <a href="#">SQL</a>
-      <a href="#">TypeScript</a>
-      <a href="#">Swift</a>
-      <a href="#">Kotlin</a>
-      <a href="#">Go</a>
-      <a href="#">R</a>
-      <a href="#">Shell</a>
-      <a href="#">Markdown</a>
-      <a href="#">LaTeX</a>
-      <a href="#">JSON</a>
-      <a href="#">Ver mais</a>
-    </div>
-  </section>
-
-  <!-- Robótica -->
-  <section id="robotica">
-    <h3>Áreas da Robótica</h3>
-    <div class="carousel-container">
-      <div class="carousel-track" id="roboticaCarousel">
-        <img src="img1.jpg" alt="Robo 1" />
-        <img src="S11.jpeg" alt="Robo 2" />
-        <img src="S33.jpeg" alt="Robo 3" />
-        <img src="HE.jpeg" alt="Robo 4" />
-        <img src="img2.jpg" alt="Robo 5" />
-      </div>
-    </div>
-    <div class="programming-table">
-      <div style="background-color: #007bff;">Robótica Educacional</div>
-      <div style="background-color: #28a745;">Robótica Industrial</div>
-      <div style="background-color: orange;">Robótica Móvel</div>
-      <div style="background-color: #6f42c1;">Robôs Autônomos</div>
-      <div style="background-color: #dc3545;">Inteligência Artificial em Robôs</div>
-      <div style="background-color: #17a2b8;">Visão Computacional</div>
-      <div style="background-color: #20c997;">Controle e Automação</div>
-      <div style="background-color: #ffc107; color: #111;">Robótica Humanoide</div>
-    </div>
-  </section>
-
-  <!-- Eletrônica -->
-  <section id="eletronica">
-    <h3>Áreas da Eletrônica</h3>
-    <div class="programming-table">
-      <div style="background-color: #17a2b8;">Circuitos Digitais</div>
-      <div style="background-color: #20c997;">Circuitos Analógicos</div>
-      <div style="background-color: #ffc107; color: #111;">Microcontroladores</div>
-      <div style="background-color: #007bff;">Arduino</div>
-      <div style="background-color: #28a745;">Raspberry Pi</div>
-      <div style="background-color: #dc3545;">Automação Residencial</div>
-      <div style="background-color: #6610f2;">Sensores e Atuadores</div>
-      <div style="background-color: #6c757d;">Internet das Coisas (IoT)</div>
-    </div>
-  </section>
-
-  <script>
-    // Carrossel Robótica - scroll horizontal automático bidirecional
-    const track = document.getElementById("roboticaCarousel");
-    let direction = 1;
-    let speed = 0.5; // velocidade
-
-    function scrollCarousel() {
-      const maxScroll = track.scrollWidth - track.clientWidth;
-      let position = track.scrollLeft + direction * speed;
-
-      if (position >= maxScroll) {
-        position = maxScroll;
-        direction = -1;
-      } else if (position <= 0) {
-        position = 0;
-        direction = 1;
-      }
-      track.scrollLeft = position;
-      requestAnimationFrame(scrollCarousel);
-    }
-
-    window.addEventListener("load", scrollCarousel);
-  </script>
-
-</body>
-</html>
 <center><!DOCTYPE html>  <html>  
 <head>  
   <meta charset="UTF-8">  
@@ -375,7 +92,8 @@
 <body>
    <div class="carousel-container 2">  
   <div class="carousel-slide 2">  
-    <img src="m5.jpeg" alt="Robo" width="30px" height="10p"> 
+    <img src="m5.jpeg" alt="Robo"> 
+    
     <img class="cr" src="transferir (1).jpeg" alt="Robo" width="100%">  <img src="m8.jpeg" alt="Robo">  
     <img src="images (2).jpeg" alt="Robo"> 
 <img src="m6.jpeg" alt="Robo"> 
@@ -427,6 +145,7 @@
   <div class="language"><a style="color: white" >Markdown</a></div>  
   <div class="language"><a style="color: white" >LaTeX</a></div>  
   <div class="language"><a style="color: white" >JSON</a></div>  
+  <div class="language"><a style="color: white" >XML</a></div>  
   <div class="language1"><a style="color: white" >Ver mais</a></div>  
     
 </div><h3 id="robotica" style="text-align: center; margin-top: 40px;">
@@ -453,63 +172,7 @@
   <div style="background-color: #ffc107; color: #111; padding: 10px; border-radius: 8px;">Robótica Humanoide</div>
 </div>
 </h3></div></h3>
-<!DOCTYPE html><html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <title>Carrossel Bidirecional Funcional</title>
-  <style>
-    .carousel-container {
-      width: 100%;
-      overflow: hidden;
-      position: relative;
-      height: 220px;
-      background: #111;
-    }.carousel-track {
-  display: flex;
-  gap: 10px;
-  transition: transform 0.1s linear;
-}
 
-.carousel-track img {
-  height: 200px;
-  border-radius: 12px;
-  flex-shrink: 0;
-}
-
-  </style>
-</head>
-<body><div class="carousel-container">
-  <div class="carousel-track" id="carouselTrack">
-    <img src="img1.jpg" alt="Imagem 1">
-    <img src="img2.jpg" alt="Imagem 2">
-    <img src="img3.jpg" alt="Imagem 3">
-    <img src="img4.jpg" alt="Imagem 4">
-    <img src="img5.jpg" alt="Imagem 5">
-  </div>
-</div><script>
-  const track = document.getElementById("carouselTrack");
-  let direction = 1;
-  let speed = 0.5; // controle da velocidade
-
-  function scrollCarousel() {
-    const maxScroll = track.scrollWidth - track.clientWidth;
-    let position = track.scrollLeft + direction * speed;
-
-    if (position >= maxScroll) {
-      position = maxScroll;
-      direction = -1;
-    } else if (position <= 0) {
-      position = 0;
-      direction = 1;
-    }
-
-    track.scrollLeft = position;
-    requestAnimationFrame(scrollCarousel);
-  }
-
-  window.addEventListener("load", scrollCarousel);
-</script></body>
-</html>
 <h3 id="robotica1" style="text-align: center; margin-top: 40px;">Áreas da Eletrônica</h3>
 <div class="programming-table" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; max-width: 400px; margin: 0 auto; text-align: center;">
   <div style="background-color: #17a2b8; color: white; padding: 10px; border-radius: 8px;">Circuitos Digitais</div>
@@ -518,4 +181,8 @@
   <div style="background-color: #007bff; color: white; padding: 10px; border-radius: 8px;">Arduino</div>
   <div style="background-color: #28a745; color: white; padding: 10px; border-radius: 8px;">Raspberry Pi</div>
   <div style="background-color: #dc3545; color: white; padding: 10px; border-radius: 8px;">Automação Residencial</div>
-  <div style="background-color: #6610f2; color: white; padding:
+  <div style="background-color: #6610f2; color: white; padding: 10px; border-radius: 8px;">Sensores e Atuadores</div>
+  <div style="background-color: #6c757d; color: white; padding: 10px; border-radius: 8px;">Internet das Coisas (IoT)</div>
+</div></h3>
+</body>
+</html></center>
